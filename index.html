@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Journey</title>
+   <!-- AOS Animate On Scroll CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff4d6d">
+ <!----icons and font------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+ 
+</head>
+<body>
+  <!-- ========== NavigationSECTION ========== -->
+  <nav>
+    <div class="logo">
+      <label for="TravelJourney"><i class="fa-solid fa-map-pin"></i>TravelJourney</label>
+    </div>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Gallery</li>
+      <li>Addtrip</li>
+    </ul>
+    
+  </nav>
+  <!-- ========== HeroSection ========== -->
+  <main>
+    <section class="text-section">
+     <h1>
+  <span class="line-one">Capture Your Travel</span><br>
+  <span class="line-two">Memories</span>
+</h1>
+ <p>Document your adventures, preserve precious moments, and create a beautiful timeline of your travel journey. Every destination tells a story.</p>
+
+      <div class="icons">
+        <i class="fa-solid fa-map-pin"></i>
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+    </section>
+
+    <section class="form-section" class="form-section" data-aos="fade-up">
+      <h2>Add new journey</h2>
+      <p class="caption">Capture your latest travel experience</p>
+      <form id="travel-form">
+        
+        <label for="destination"><i class="fa-solid fa-map-pin"></i>Destination</label>
+        <input type="text" id="destination" placeholder="Enter destination" />
+
+        <label for="date"><i class="fas fa-calendar"></i> Date</label>
+        <input type="date" id="date" />
+
+        <label for="description"><i class="fa-solid fa-book-open"></i>Description</label>
+        <textarea id="description" placeholder="Write about your journey..."></textarea>
+
+        <label for="photo"> <i class="fa-solid fa-camera"></i> Upload Photo</label>
+        <input type="file" id="photo" accept="image/*" />
+        <div class="preview-container">
+          <img id="photo-preview" src="" alt=""/>
+        </div>
+
+        <button type="submit">Add Journey</button>
+      </form>
+    </section>
+  </main>
+  <!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="about-section">
+  <h2>About TravelJourney</h2>
+  <p>TravelJourney is your personal adventure log! Record your best trips and share them with the world 🌍✨</p>
+  <div class="stats">
+      <div class="stat"><span>50K+</span><p>Travelers</p></div>
+      <div class="stat"><span>200+</span><p>Countries</p></div>
+      <div class="stat"><span>1M+</span><p>Memories</p></div>
+      <div class="stat"><span>5K+</span><p>Cities</p></div>
+    </div>
+
+  <div class="team">
+    <div class="member">
+        <i class="fa-solid fa-map-pin"></i>
+      <h2>Track Yourjourney</h2>
+      <p>Document every destination you visit and create a visual map of your adventure</p>
+      
+    </div>
+    <div class="member">
+        <i class="fa-solid fa-camera"></i>
+      <h2>Preserve Memories</h2>
+      <p>Upload photos and write detailed memories about your favourite travel momemnts</p>
+      
+    </div>
+    <div class="member">
+        <i class="fa-solid fa-heart"></i>
+        <h2>Share Stories</h2>
+        <p>Connect with fellow travelers and share your unique travel experience</p>
+        
+      </div>
+      <div class="member">
+        <i class="fa-solid fa-globe"></i>
+        <h2>Discover New Places</h2>
+        <p>Get inspired by other travelers' journey and discover your next destination</p>
+        
+      </div>
+  </div>
+</section>
+
+<!-- ========== Gallery Section========== -->
+  <section class="gallery">
+        <h2>Travel Gallery</h2>
+        <p>Explore beautiful destinations from around the world through our community of travelers.</p>
+       <input type="text" placeholder="Search destinations..." id="search-input">
+  <i class="fas fa-search"></i>
+  <p id="not-found-msg" style="display:none; color:#ff4d6d; font-weight:bold; margin-top:10px;">No destinations found 😕</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="gallerypics/img1.jpg" alt="Mountain Landscape" data-title="paris tower" data-date="July 15, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Paris</h3>
+                    <p>July 15, 2025</p>
+                    <p>city of tower</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img2.jpg" alt="" data-title="Lake view" data-date="July 16, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Lake view</h3>
+                    <p>July 16, 2025</p>
+                    <p>done some boating</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img3.jpg" alt="Hiker in Mountains" data-title="fewa-lake" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Fewa lake</h3>
+                    <p>July 17, 2025</p>
+                    <p>neat and clean</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img4.jpg" alt="Hiker in Mountains" data-title="France" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>France-street</h3>
+                    <p>July 17, 2025</p>
+                    <p>streets are clean</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img5.jpg" alt="Hiker in Mountains" data-title="london" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>London</h3>
+                    <p>July 17, 2025</p>
+                    <p>London from air</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img6.jpg" alt="Hiker in Mountains" data-title="London" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>London-bridge</h3>
+                    <p>July 17, 2025</p>
+                    <p>Dam beautiful</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img5.jpg" alt="Hiker in Mountains" data-title="hills" data-date="July 17, 2025" loading="lazy">
+                <div class="hover-details">
+                    <h3>illam</h3>
+                    <p>July 17, 2025</p>
+                    <p>it's a heaven</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img7.jpg" alt="Hiker in Mountains" data-title="Mountain" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Mountain</h3>
+                    <p>July 17, 2025</p>
+                    <p>it was dam cold</p>
+                </div>
+            </div>
+             <div class="gallery-item">
+                <img src="gallerypics/img8.jpg" alt="Hiker in Mountains" data-title="Boudtha" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Boudtha-temple</h3>
+                    <p>July 17, 2025</p>
+                    <p>looks crazy</p>
+                </div>
+            </div>
+             <div class="gallery-item">
+                <img src="gallerypics/img9.jpg" alt="Hiker in Mountains" data-title="Kathmandu" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Kathmandu</h3>
+                    <p>July 17, 2025</p>
+                    <p>such a lovely architecture</p>
+                </div>
+            </div>
+             <div class="gallery-item">
+                <img src="gallerypics/img10.jpg" alt="Hiker in Mountains" data-title="pokhra" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Pokhra</h3>
+                    <p>July 17, 2025</p>
+                    <p>view was great from top</p>
+                </div>
+            </div>
+             <div class="gallery-item">
+                <img src="gallerypics/img11.jpg" alt="Hiker in Mountains" data-title="Night" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Camping</h3>
+                    <p>July 17, 2025</p>
+                    <p>looks like heaven</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img12.jpg" alt="Hiker in Mountains" data-title="Mumbai" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Mumbai-street</h3>
+                    <p>July 17, 2025</p>
+                    <p>what crazy street</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img13.jpg" alt="Hiker in Mountains" data-title="Delhi" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Delhi-lake</h3>
+                    <p>July 17, 2025</p>
+                    <p>it was little mess</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img14.jpg" alt="Hiker in Mountains" data-title="lal kila" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Lal-kila</h3>
+                    <p>July 17, 2025</p>
+                    <p>Dam ggod yrr</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallerypics/img15.jpg" alt="Hiker in Mountains" data-title="Delhi-gate" data-date="July 17, 2025"loading="lazy">
+                <div class="hover-details">
+                    <h3>Delhi-gate</h3>
+                    <p>July 17, 2025</p>
+                    <p>dam big gate</p>
+                </div>
+            </div>
+        </div>
+        <!-- ========== Fotter Section========== -->
+
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TravelJourney</h3>
+                <p>Organize your life with our smart dashboard - manage tasks, goals, and memories in one place.</p>
+            </div>
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Gallery</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>Kathmandu, Nepal</p>
+                <p>info@lifehub.com</p>
+                <p>+977 9812345678</p>
+            </div>
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 LifeHub | All Rights Reserved.</p>
+            <p>Made</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="java.js"></script>
+</body>
+</html>
