@@ -28,7 +28,7 @@ A simple and aesthetic travel journey web app built with HTML, CSS, and JavaScri
 This project benefited from AI assistance using ChatGPT, grook, deepseek, emergent which helped with coding suggestions and troubleshooting.
 
 ## 🚀 Demo
-Check out the live app here: [**Click Here**]()
+Check out the live app here: [**Click Here**](https://aadityasah864.github.io/travel--journey/)
 
 
 
