@@ -285,5 +285,30 @@ AOS.init({
   once: true
 });  
 
+document.addEventListener("DOMContentLoaded", () => {
+  const addTripBtn = document.getElementById("addtrip-btn");
+  const formSection = document.querySelector(".form-section");
+  const mainSection = document.querySelector("main");
 
+  addTripBtn.addEventListener("click", () => {
+    const isActive = formSection.classList.toggle("active");
+    mainSection.classList.toggle("form-active", isActive);
+    addTripBtn.classList.toggle("active", isActive);
+
+    if (isActive) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.querySelector("nav ul");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  // Your existing addTripBtn listener here...
+});
 
